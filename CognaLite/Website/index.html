@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html style="background-color: #010C1F">
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Welcome To Cognalite</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="Images/cognalite_inverse.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href=""><i class="fa-solid fa-house"></i>HOME</a></li>
+					<li><a href="javascript:scrollToProjects()"><i class="fa-solid fa-microchip"></i>PROJECTS</a></li>
+					<li><a href="https://www.imperial.ac.uk/white-city-campus/community/the-invention-rooms/"><i class="fa-solid fa-location-dot"></i>MAKERSPACE</a></li>
+				</ul>
+			</div>
+			<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+		</nav>
+	<div class="branding">
+		<h1>Welcome To Cognalite</h1>
+		<p>For a new perspective</p>
+	</div>
+	</section>
+
+	<section class="info">
+		<h1>About Us</h1>
+		<h2>At cognolite our aims are to make up and coming advanced technology more widely used in day to day life</h2>
+		<p>From developing nations to urban city scapes, we want to target everyone in order to promote technology we never would've thought to be available for personal use. AI is an up and coming field in which it is being implemented on the roads and in homes but we never get to command AI, or take the reigns of how we use AI with the general public. We aim to bring this freedom to the masses, by allowing more advanced, customisable technology to be available to use in day to day life.</p>
+	</section>
+
+	<section class="Latest_Projects" id="latest_projects">
+		<h1 style="color: #F4B994">Latest Projects :</h1> 
+		<div class="swivel_overview">
+			<ul>
+				<h2 style="color: #FE9E6D">Introducing Swivel...</h2>
+				<h3 style="color: #FE9E6D">One of our goals is to make technology accessible to everyone, so what better way to start than with the next generation of experts.</h3>
+				<div class="row">
+  					<div class="column"><img class="prelim" src="Images/prelim_sketch_2.png"></div>
+  					<div class="column">
+						<div class="text_plate">
+  						  <p style="color: #E7E7E7; padding-bottom: 30px">Here to revolutionise the video teaching format, we are working on a prototype of swivel- a wall mounted phone holder that uses image processing to orient itself to face its user or to lock it in a fixed position. By utilising image processing in order to deliver a more interractive way to make videos. We took the familiar, basic car phone holder design and extrapolated it to provide a full range of motion as well as control of the distance between the camera and the wall.</p>
+	  					  <p><i style="color: #F4B994" class="fa-solid fa-coins" style="padding-right: 5px"></i>  By using only 4 joints (as opposed to multiple universal joints in sequence) to produce a full range of motion and orientation, we can keep the price low.</p>
+	  					  <p><i style="color: #F4B994" class="fa-solid fa-camera" style="padding-right: 5px"></i>  To simplify the design, an app will be developed in order to control swivel. It uses the phone's camera to capture images passively, then detecting faces and/or objects in order to calculate the required motion of swivel.</p>
+	  					  <p style="padding-bottom: 10px"><i style="color: #F4B994" class="fa-solid fa-microphone-lines" style="padding-right: 5px"></i>  Alternatively, you can fix swivel in one place. Using the phone's microphone (optional), you will be able to command swivel to "lock" or "unlock" its position.</p>
+  					        </div>
+      					</div>
+				</div>
+				<h4 style="color: #FF5648">By utilising these features we deliver an easy-to-use tool that is simplistic and familiar; user friendly in all regards and all with an optimised price-point.</h4>
+			</ul>
+		</div>
+		<div class="design_process">
+			<ul>
+				<h2 style="padding-bottom: 30px; color: #9DECDB">Our Design Process: </h2>
+				<div class="row">
+					<div class="column"><img src="Images/basic_model.png"></div>
+					<div class="column"><img src="Images/initial_hinge_design.png"></div>
+					<div class="column"><img src="Images/final_hinge.png"></div>
+				</div>
+				<p style="padding: 10px; color: #E3FFF9">Our design process took off from a small paper and foam model which was used to get a sense of scale of the project</p>
+				<p style="padding: 10px; color: #E3FFF9">The hinges for our works-like prototype are designed using servo motors (small, powerful motors which have a high level of control) and connected using pvc tubes.</p>
+				<p style="padding: 10px; color: #E3FFF9">The electronics all operate under arduino (a microcontroller board) which allows for the motors to be controlled by a pc</p>
+				<p style="padding: 10px; color: #E3FFF9">Our next step is the integration of the web app. A web app will be created using python's OpenCV library (image processing) and transmitted via a bluetooth chip extension to the arduino</p>
+				<div class="row">
+					<div class="column"><img src="Images/arduino.png" style="width: 20%; height: auto"><h3 style="text-align: center; padding: 10px; color: #8ED8C8">The reason why we use arduino is because it is operated on an open source software, meaning everyone can edit the code and change the way the motors move to their liking, providing more customisability and utility. If the code ever gets broken, then a self restore tool will be available on the website (up and coming)- redownloading the code and uploading it to the arduino.</h3></div>
+					<div class="column"><img src="Images/python.png" style="width: 20%; height: auto"><h3 style="text-align: center; padding: 10px; color: #8ED8C8">One way we can make swivel more interractive is to create a custom interface through the swivel app (up and coming) which can adjust to the user by adding custom verbal commands, something which can be easilly adjusted for with python using the pocketsphinx (speech recognition) module.</div>
+				</div>
+			</ul>
+		</div>
+		<div class="competitors">
+			<ul>
+				<h2 style="padding-bottom: 30px; color: #DACDF6">Swivel's Competitors: </h2>
+				<p>Our main competitor is the iJoy Chase (a desk mounted phone holder that tracks the user's position). The iJoy Chase is almost the same as swivel in that it uses image processing via an app on the user's phone however the swivel allows for greater range of motion and customisability.</p>
+				<img style="padding: 20px; width: 30%; height: auto" src="Images/ijoy.png"></div>
+				<div class="row"  style="text-align: left">
+					<div class="column">
+						<h3 style="color: #CAB5F8">Pros:</h3>
+						<p><i style="padding: 5px" class="fa-solid fa-plus"></i>Swivel offers a wider range of motion</p>
+						<p><i style="padding: 5px" class="fa-solid fa-plus"></i>Swivel offers more customisation</p>
+						<p><i style="padding: 5px" class="fa-solid fa-plus"></i>Swivel can be opperated using voice commands</p>
+					</div>
+					<div class="column">
+						<h3 style="color: #CAB5F8">Cons:</h3>
+						<p><i style="padding: 5px" class="fa-solid fa-minus"></i>Swivel is more expensive than the iJoy</p>
+						<p><i style="padding: 5px" class="fa-solid fa-minus"></i>Swivel is more fragile due to the joints</p>
+						<p><i style="padding: 5px" class="fa-solid fa-minus"></i>Swivel requires either wall mounting or clamp mounting</p>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</section>
+
+	<script>
+
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+		function scrollToProjects(){
+			document.getElementById("latest_projects").scrollIntoView({ 
+  				behavior: 'smooth'
+			});
+		}
+	</script>
+
+</body>
+</html>
